@@ -8,14 +8,14 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #333333, #1a1a1a); /* Daha koyu gri tonları */
-      color: #eeeeee; /* Daha açık metin rengi */
+      background: linear-gradient(to bottom, #333333, #1a1a1a);
+      color: #eeeeee;
     }
     header {
       position: relative;
       width: 100%;
       height: 200px;
-      background-color: #554400; /* Daha koyu turuncu */
+      background-color: #554400;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -23,41 +23,40 @@
     header img {
       max-height: 100%;
     }
-    .main-content-wrapper { /* Yeni bir sarmalayıcı div ekledik */
+    .main-content-wrapper {
       display: flex;
-      /* padding: 20px; Bu paddingi kaldırdık ki menü en sola yapışsın */
     }
     .left-menu {
-      width: 100px; /* Menü genişliği */
-      background-color: #443300; /* Menü arka planı */
-      padding: 10px 0; /* Üst ve alttan boşluk, yandan yok */
+      width: 100px;
+      background-color: #443300;
+      padding: 10px 0;
       display: flex;
       flex-direction: column;
-      gap: 10px; /* Butonlar arasında boşluk */
-      align-items: center; /* Butonları ortala */
+      gap: 10px;
+      align-items: center;
     }
     .menu-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 80px; /* Kare buton için genişlik (100px menüye sığması için 80px yaptık) */
-      height: 80px; /* Kare buton için yükseklik */
-      background-color: #665500; /* Buton arka planı */
+      width: 80px;
+      height: 80px;
+      background-color: #665500;
       border: 1px solid #776600;
       border-radius: 5px;
-      text-decoration: none; /* Link alt çizgisini kaldır */
+      text-decoration: none;
       color: #eeeeee;
       font-size: 0.8em;
       text-align: center;
       transition: background-color 0.3s ease;
     }
     .menu-item:hover {
-      background-color: #776600; /* Hover efekti */
+      background-color: #776600;
     }
     .menu-item img {
-      width: 45px; /* Resim genişliği */
-      height: 45px; /* Resim yüksekliği */
+      width: 45px;
+      height: 45px;
       object-fit: cover;
       margin-bottom: 5px;
       border-radius: 3px;
@@ -67,11 +66,11 @@
       padding: 0;
     }
     .container {
-      flex: 1; /* Kalan alanı kapla */
+      flex: 1;
       display: flex;
       flex-wrap: wrap;
-      padding: 20px; /* İçeriğe padding ekledik */
-      margin-left: 10px; /* Menü ile içerik arasına boşluk */
+      padding: 20px;
+      margin-left: 10px;
     }
     .text {
       flex: 2;
@@ -92,7 +91,7 @@
     footer {
       text-align: center;
       padding: 10px;
-      background-color: #443300; /* Daha koyu turuncu */
+      background-color: #443300;
       color: white;
     }
   </style>
@@ -112,7 +111,7 @@
         <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN2" alt="Buton 2 Resmi">
         <p>Buton 2</p>
       </a>
-      </div>
+    </div>
 
     <div class="container">
       <div class="text">
