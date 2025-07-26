@@ -23,10 +23,53 @@
     header img {
       max-height: 100%;
     }
+    .main-content-wrapper { /* Yeni bir sarmalayıcı div ekledik */
+      display: flex;
+      padding: 20px;
+    }
+    .left-menu {
+      width: 100px; /* Menü genişliği */
+      background-color: #443300; /* Menü arka planı */
+      padding-right: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px; /* Butonlar arasında boşluk */
+    }
+    .menu-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100px; /* Kare buton için genişlik */
+      height: 100px; /* Kare buton için yükseklik */
+      background-color: #665500; /* Buton arka planı */
+      border: 1px solid #776600;
+      border-radius: 5px;
+      text-decoration: none; /* Link alt çizgisini kaldır */
+      color: #eeeeee;
+      font-size: 0.8em;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+    .menu-item:hover {
+      background-color: #776600; /* Hover efekti */
+    }
+    .menu-item img {
+      width: 60px; /* Resim genişliği */
+      height: 60px; /* Resim yüksekliği */
+      object-fit: cover;
+      margin-bottom: 5px;
+      border-radius: 3px;
+    }
+    .menu-item p {
+      margin: 0;
+      padding: 0;
+    }
     .container {
+      flex: 1; /* Kalan alanı kapla */
       display: flex;
       flex-wrap: wrap;
-      padding: 20px;
+      padding-left: 20px; /* Menü ile içerik arasına boşluk */
     }
     .text {
       flex: 2;
@@ -57,18 +100,31 @@
     <img src="banner.avif" alt="Banner" />
   </header>
 
-  <div class="container">
-    <div class="text">
-      <h1>Departed Away</h1>
-      <p>
-        Departed Away, karakterimiz ve onun karşı kişiliği ile karşılaştığı bir oyun. Oyun karanlık temalı, ve karakterimizin anksiyetesi var.
-      </p>
-      <p>
-        Karakterlerimiz için, aşağıda bulunan butonlara tıklayabilirsiniz. (daha eklemedim adamım, daha yeni yapılıyo site)
-      </p>
-    </div>
-    <div class="logo">
-      <img src="logo.jpg" alt="Logo" />
+  <div class="main-content-wrapper">
+    <div class="left-menu">
+      <a href="#" class="menu-item">
+        <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN1" alt="Buton 1 Resmi">
+        <p>Buton 1</p>
+      </a>
+      <a href="#" class="menu-item">
+        <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN2" alt="Buton 2 Resmi">
+        <p>Buton 2</p>
+      </a>
+      </div>
+
+    <div class="container">
+      <div class="text">
+        <h1>Departed Away</h1>
+        <p>
+          Departed Away, karakterimiz ve onun karşı kişiliği ile karşılaştığı bir oyun. Oyun karanlık temalı, ve karakterimizin anksiyetesi var.
+        </p>
+        <p>
+          Karakterlerimiz için, aşağıda bulunan butonlara tıklayabilirsiniz. (daha eklemedim adamım, daha yeni yapılıyo site)
+        </p>
+      </div>
+      <div class="logo">
+        <img src="logo.jpg" alt="Logo" />
+      </div>
     </div>
   </div>
 
