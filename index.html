@@ -10,8 +10,8 @@
       font-family: Arial, sans-serif;
       background: linear-gradient(to bottom, #333333, #1a1a1a);
       color: #eeeeee;
-      position: relative; /* Body'yi menünün konumlandırması için referans noktası yap */
-      min-height: 100vh; /* Sayfa içeriği az olsa bile menünün tam yükseklikte olmasını sağlar */
+      position: relative;
+      min-height: 100vh;
     }
     header {
       width: 100%;
@@ -25,19 +25,19 @@
       max-height: 100%;
     }
     .left-menu {
-      position: absolute; /* Menüyü normal akıştan çıkar */
-      top: 0; /* En üste hizala */
-      left: 0; /* En sola hizala */
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100px;
       background-color: #443300;
-      padding-top: 20px; /* İlk butonun menünün başından biraz aşağıda başlaması için boşluk */
+      padding-top: 20px;
       display: flex;
       flex-direction: column;
       gap: 10px;
       align-items: center;
-      min-height: 100%; /* Sayfanın tüm yüksekliğini kapla */
-      box-sizing: border-box; /* Padding'i genişliğe dahil et */
-      z-index: 10; /* Diğer içeriklerin üstünde görünmesini sağlar */
+      min-height: 100%;
+      box-sizing: border-box;
+      z-index: 10;
     }
     .menu-item {
       display: flex;
@@ -71,7 +71,7 @@
     }
     .main-content-wrapper {
       display: flex;
-      margin-left: 100px; /* Menünün kapladığı alanı içerikten uzak tut */
+      margin-left: 100px;
     }
     .container {
       flex: 1;
@@ -107,7 +107,7 @@
 <body>
   <div class="left-menu">
     <a href="#" class="menu-item">
-      <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN1" alt="Buton 1 Resmi">
+      <img src="https://via.placeholder.com/60/cccccc/000000?text=IMG1" alt="Buton 1 Resmi">
       <p>Buton 1</p>
     </a>
     <a href="#" class="menu-item">
