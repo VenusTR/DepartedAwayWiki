@@ -25,23 +25,24 @@
     }
     .main-content-wrapper { /* Yeni bir sarmalayıcı div ekledik */
       display: flex;
-      padding: 20px;
+      /* padding: 20px; Bu paddingi kaldırdık ki menü en sola yapışsın */
     }
     .left-menu {
       width: 100px; /* Menü genişliği */
       background-color: #443300; /* Menü arka planı */
-      padding-right: 10px;
+      padding: 10px 0; /* Üst ve alttan boşluk, yandan yok */
       display: flex;
       flex-direction: column;
       gap: 10px; /* Butonlar arasında boşluk */
+      align-items: center; /* Butonları ortala */
     }
     .menu-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 100px; /* Kare buton için genişlik */
-      height: 100px; /* Kare buton için yükseklik */
+      width: 80px; /* Kare buton için genişlik (100px menüye sığması için 80px yaptık) */
+      height: 80px; /* Kare buton için yükseklik */
       background-color: #665500; /* Buton arka planı */
       border: 1px solid #776600;
       border-radius: 5px;
@@ -55,8 +56,8 @@
       background-color: #776600; /* Hover efekti */
     }
     .menu-item img {
-      width: 60px; /* Resim genişliği */
-      height: 60px; /* Resim yüksekliği */
+      width: 45px; /* Resim genişliği */
+      height: 45px; /* Resim yüksekliği */
       object-fit: cover;
       margin-bottom: 5px;
       border-radius: 3px;
@@ -69,7 +70,8 @@
       flex: 1; /* Kalan alanı kapla */
       display: flex;
       flex-wrap: wrap;
-      padding-left: 20px; /* Menü ile içerik arasına boşluk */
+      padding: 20px; /* İçeriğe padding ekledik */
+      margin-left: 10px; /* Menü ile içerik arasına boşluk */
     }
     .text {
       flex: 2;
