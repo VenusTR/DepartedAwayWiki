@@ -25,15 +25,20 @@
     }
     .main-content-wrapper {
       display: flex;
+      /* Menünün en sol üstten başlaması için bu kısma dokunmuyoruz */
     }
     .left-menu {
       width: 100px;
       background-color: #443300;
-      padding: 10px 0;
+      padding-top: 200px; /* Menünün başlık görselinin altından başlaması için */
       display: flex;
       flex-direction: column;
       gap: 10px;
       align-items: center;
+      /* Pozisyonu sabitlemek isterseniz: */
+      /* position: sticky; */
+      /* top: 0; */
+      /* height: 100vh; */
     }
     .menu-item {
       display: flex;
@@ -110,6 +115,10 @@
       <a href="#" class="menu-item">
         <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN2" alt="Buton 2 Resmi">
         <p>Buton 2</p>
+      </a>
+      <a href="#" class="menu-item">
+        <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN3" alt="Buton 3 Resmi">
+        <p>Buton 3</p>
       </a>
     </div>
 
