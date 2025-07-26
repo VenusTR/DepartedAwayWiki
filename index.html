@@ -39,6 +39,22 @@
       box-sizing: border-box;
       z-index: 10;
     }
+    .menu-logo-item { /* Yeni eklenen logo alanı için stil */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      background-color: #665500; /* Butonlarla aynı arka plan */
+      border: 1px solid #776600; /* Butonlarla aynı kenarlık */
+      border-radius: 5px;
+      margin-bottom: 10px; /* Butonlardan ayırmak için biraz boşluk */
+    }
+    .menu-logo-item img {
+      max-width: 90%; /* Resmin kutuya sığması için */
+      max-height: 90%;
+      object-fit: contain; /* Resmi kutuya sığdırırken oranı koru */
+    }
     .menu-item {
       display: flex;
       flex-direction: column;
@@ -106,6 +122,9 @@
 </head>
 <body>
   <div class="left-menu">
+    <div class="menu-logo-item">
+      <img src="https://via.placeholder.com/80x80/cccccc/000000?text=LOGO" alt="Site Logosu">
+    </div>
     <a href="#" class="menu-item">
       <img src="https://via.placeholder.com/60/cccccc/000000?text=IMG1" alt="Buton 1 Resmi">
       <p>Buton 1</p>
