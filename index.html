@@ -10,9 +10,10 @@
       font-family: Arial, sans-serif;
       background: linear-gradient(to bottom, #333333, #1a1a1a);
       color: #eeeeee;
+      position: relative; /* Body'yi menünün konumlandırması için referans noktası yap */
+      min-height: 100vh; /* Sayfa içeriği az olsa bile menünün tam yükseklikte olmasını sağlar */
     }
     header {
-      position: relative;
       width: 100%;
       height: 200px;
       background-color: #554400;
@@ -23,22 +24,20 @@
     header img {
       max-height: 100%;
     }
-    .main-content-wrapper {
-      display: flex;
-      /* Menünün en sol üstten başlaması için bu kısma dokunmuyoruz */
-    }
     .left-menu {
+      position: absolute; /* Menüyü normal akıştan çıkar */
+      top: 0; /* En üste hizala */
+      left: 0; /* En sola hizala */
       width: 100px;
       background-color: #443300;
-      padding-top: 200px; /* Menünün başlık görselinin altından başlaması için */
+      padding-top: 20px; /* İlk butonun menünün başından biraz aşağıda başlaması için boşluk */
       display: flex;
       flex-direction: column;
       gap: 10px;
       align-items: center;
-      /* Pozisyonu sabitlemek isterseniz: */
-      /* position: sticky; */
-      /* top: 0; */
-      /* height: 100vh; */
+      min-height: 100%; /* Sayfanın tüm yüksekliğini kapla */
+      box-sizing: border-box; /* Padding'i genişliğe dahil et */
+      z-index: 10; /* Diğer içeriklerin üstünde görünmesini sağlar */
     }
     .menu-item {
       display: flex;
@@ -69,6 +68,10 @@
     .menu-item p {
       margin: 0;
       padding: 0;
+    }
+    .main-content-wrapper {
+      display: flex;
+      margin-left: 100px; /* Menünün kapladığı alanı içerikten uzak tut */
     }
     .container {
       flex: 1;
@@ -102,26 +105,26 @@
   </style>
 </head>
 <body>
+  <div class="left-menu">
+    <a href="#" class="menu-item">
+      <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN1" alt="Buton 1 Resmi">
+      <p>Buton 1</p>
+    </a>
+    <a href="#" class="menu-item">
+      <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN2" alt="Buton 2 Resmi">
+      <p>Buton 2</p>
+    </a>
+    <a href="#" class="menu-item">
+      <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN3" alt="Buton 3 Resmi">
+      <p>Buton 3</p>
+    </a>
+  </div>
+
   <header>
     <img src="banner.avif" alt="Banner" />
   </header>
 
   <div class="main-content-wrapper">
-    <div class="left-menu">
-      <a href="#" class="menu-item">
-        <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN1" alt="Buton 1 Resmi">
-        <p>Buton 1</p>
-      </a>
-      <a href="#" class="menu-item">
-        <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN2" alt="Buton 2 Resmi">
-        <p>Buton 2</p>
-      </a>
-      <a href="#" class="menu-item">
-        <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN3" alt="Buton 3 Resmi">
-        <p>Buton 3</p>
-      </a>
-    </div>
-
     <div class="container">
       <div class="text">
         <h1>Departed Away</h1>
