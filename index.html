@@ -29,7 +29,7 @@
       top: 0;
       left: 0;
       width: 100px;
-      background-color: #443300;
+      background-color: #FFD700; /* Daha açık, direkt sarı renk */
       padding-top: 20px;
       display: flex;
       flex-direction: column;
@@ -39,21 +39,21 @@
       box-sizing: border-box;
       z-index: 10;
     }
-    .menu-logo-item { /* Yeni eklenen logo alanı için stil */
+    .menu-logo-item {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 80px;
       height: 80px;
-      background-color: #665500; /* Butonlarla aynı arka plan */
-      border: 1px solid #776600; /* Butonlarla aynı kenarlık */
+      background-color: #e0b000; /* Butonlarla uyumlu, biraz koyu sarı */
+      border: 1px solid #c09000;
       border-radius: 5px;
-      margin-bottom: 10px; /* Butonlardan ayırmak için biraz boşluk */
+      margin-bottom: 10px;
     }
     .menu-logo-item img {
-      max-width: 90%; /* Resmin kutuya sığması için */
+      max-width: 90%;
       max-height: 90%;
-      object-fit: contain; /* Resmi kutuya sığdırırken oranı koru */
+      object-fit: contain;
     }
     .menu-item {
       display: flex;
@@ -62,17 +62,17 @@
       justify-content: center;
       width: 80px;
       height: 80px;
-      background-color: #665500;
-      border: 1px solid #776600;
+      background-color: #e0b000; /* Buton arka planı, biraz daha koyu sarı */
+      border: 1px solid #c09000;
       border-radius: 5px;
       text-decoration: none;
-      color: #eeeeee;
+      color: #333333; /* Metin rengini koyulaştırdık ki okunabilsin */
       font-size: 0.8em;
       text-align: center;
       transition: background-color 0.3s ease;
     }
     .menu-item:hover {
-      background-color: #776600;
+      background-color: #f0c000; /* Hover efekti için farklı bir sarı tonu */
     }
     .menu-item img {
       width: 45px;
