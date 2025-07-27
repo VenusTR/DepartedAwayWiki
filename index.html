@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #333333, #1a1a1a);
+      background-color: #554400; /* Tüm sayfa arka planı, banner rengiyle aynı */
       color: #eeeeee;
       position: relative;
       min-height: 100vh;
@@ -16,7 +16,7 @@
     header {
       width: 100%;
       height: 200px;
-      background-color: #554400;
+      background-color: #554400; /* Banner arka planı (zaten aynıydı) */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -29,7 +29,7 @@
       top: 0;
       left: 0;
       width: 100px;
-      background-color: #FFD700; /* Daha açık, direkt sarı renk */
+      background-color: #A08000;
       padding-top: 20px;
       display: flex;
       flex-direction: column;
@@ -45,8 +45,8 @@
       justify-content: center;
       width: 80px;
       height: 80px;
-      background-color: #e0b000; /* Butonlarla uyumlu, biraz koyu sarı */
-      border: 1px solid #c09000;
+      background-color: #8A6D00;
+      border: 1px solid #705800;
       border-radius: 5px;
       margin-bottom: 10px;
     }
@@ -62,17 +62,17 @@
       justify-content: center;
       width: 80px;
       height: 80px;
-      background-color: #e0b000; /* Buton arka planı, biraz daha koyu sarı */
-      border: 1px solid #c09000;
+      background-color: #8A6D00;
+      border: 1px solid #705800;
       border-radius: 5px;
       text-decoration: none;
-      color: #333333; /* Metin rengini koyulaştırdık ki okunabilsin */
+      color: #eeeeee;
       font-size: 0.8em;
       text-align: center;
       transition: background-color 0.3s ease;
     }
     .menu-item:hover {
-      background-color: #f0c000; /* Hover efekti için farklı bir sarı tonu */
+      background-color: #997B00;
     }
     .menu-item img {
       width: 45px;
@@ -88,13 +88,17 @@
     .main-content-wrapper {
       display: flex;
       margin-left: 100px;
+      padding-top: 20px; /* İçeriğin üstten de boşluk bırakması için */
     }
     .container {
       flex: 1;
       display: flex;
       flex-wrap: wrap;
       padding: 20px;
-      margin-left: 10px;
+      /* margin-left: 10px; Bu artık main-content-wrapper'da ayarlı */
+      border-radius: 15px;
+      background-color: rgba(0, 0, 0, 0.3); /* Hafif şeffaf arka plan */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
     .text {
       flex: 2;
