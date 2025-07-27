@@ -45,15 +45,20 @@
       justify-content: center;
       width: 80px;
       height: 80px;
-      background-color: #8A6D00;
+      background-color: #8A6D00; /* Butonlarla uyumlu, daha da koyu sarı */
       border: 1px solid #705800;
       border-radius: 5px;
       margin-bottom: 10px;
+      text-decoration: none; /* Link alt çizgisini kaldır */
+      transition: background-color 0.3s ease;
+    }
+    .menu-logo-item:hover {
+      background-color: #997B00; /* Hover efekti */
     }
     .menu-logo-item img {
-      max-width: 90%;
+      max-width: 90%; /* Resmin kutuya sığması için */
       max-height: 90%;
-      object-fit: contain;
+      object-fit: contain; /* Resmi kutuya sığdırırken oranı koru */
     }
     .menu-item {
       display: flex;
@@ -62,17 +67,17 @@
       justify-content: center;
       width: 80px;
       height: 80px;
-      background-color: #8A6D00;
+      background-color: #8A6D00; /* Buton arka planı, daha koyu sarı */
       border: 1px solid #705800;
       border-radius: 5px;
       text-decoration: none;
-      color: #eeeeee;
+      color: #eeeeee; /* Metin rengini tekrar açtık, daha iyi okunur */
       font-size: 0.8em;
       text-align: center;
       transition: background-color 0.3s ease;
     }
     .menu-item:hover {
-      background-color: #997B00;
+      background-color: #997B00; /* Hover efekti için biraz daha açık ama yine koyu sarı tonu */
     }
     .menu-item img {
       width: 45px;
@@ -95,7 +100,6 @@
       display: flex;
       flex-wrap: wrap;
       padding: 20px;
-      /* margin-left: 10px; Bu artık main-content-wrapper'da ayarlı */
       border-radius: 15px;
       background-color: rgba(0, 0, 0, 0.3); /* Hafif şeffaf arka plan */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -126,18 +130,18 @@
 </head>
 <body>
   <div class="left-menu">
-    <div class="menu-logo-item">
+    <a href="logo linki" class="menu-logo-item">
       <img src="https://via.placeholder.com/80x80/cccccc/000000?text=LOGO" alt="Site Logosu">
-    </div>
-    <a href="#" class="menu-item">
+    </a>
+    <a href="buton 1 linki" class="menu-item">
       <img src="https://via.placeholder.com/60/cccccc/000000?text=IMG1" alt="Buton 1 Resmi">
       <p>Buton 1</p>
     </a>
-    <a href="#" class="menu-item">
+    <a href="buton 2 linki" class="menu-item">
       <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN2" alt="Buton 2 Resmi">
       <p>Buton 2</p>
     </a>
-    <a href="#" class="menu-item">
+    <a href="buton 3 linki" class="menu-item">
       <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN3" alt="Buton 3 Resmi">
       <p>Buton 3</p>
     </a>
