@@ -1,1 +1,192 @@
-test
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Departed Away Wiki</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #554400;
+      color: #eeeeee;
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      width: 100%;
+      height: 200px;
+      background-color: #554400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header img {
+      max-height: 100%;
+    }
+    .left-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100px;
+      background-color: #A08000;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      min-height: 100%;
+      box-sizing: border-box;
+      z-index: 10;
+    }
+    .menu-logo-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      background-color: #8A6D00;
+      border: 1px solid #705800;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      color: white;
+    }
+    .menu-logo-item:hover {
+      background-color: #997B00;
+    }
+    .menu-logo-item img {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+    }
+    .menu-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      background-color: #8A6D00;
+      border: 1px solid #705800;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #eeeeee;
+      font-size: 0.8em;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+    .menu-item:hover {
+      background-color: #997B00;
+    }
+    .menu-item img {
+      width: 45px;
+      height: 45px;
+      object-fit: cover;
+      margin-bottom: 5px;
+      border-radius: 3px;
+    }
+    .menu-item p {
+      margin: 0;
+      padding: 0;
+    }
+    .main-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-left: 100px;
+      padding: 20px;
+      flex: 1;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      background-color: rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .text {
+      flex: 2;
+      min-width: 300px;
+      padding-right: 20px;
+    }
+    .logo {
+      flex: 1;
+      min-width: 150px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+    .logo img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #443300;
+      color: white;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="left-menu">
+    <a href="logo linki" class="menu-logo-item">
+      <img src="https://venustr.github.io/DepartedAwayWiki/nooarth.jpg" alt="Site Logosu">
+    </a>
+    <a href="characters.html" class="menu-item">
+      <img src="https://via.placeholder.com/60/cccccc/000000?text=IMG1" alt="Buton 1 Resmi">
+      <p>Karakterler</p>
+    </a>
+    <a href="buton2.html" class="menu-item">
+      <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN2" alt="Buton 2 Resmi">
+      <p>Buton 2</p>
+    </a>
+    <a href="buton3.html" class="menu-item">
+      <img src="https://via.placeholder.com/60/cccccc/000000?text=BTN3" alt="Buton 3 Resmi">
+      <p>Buton 3</p>
+    </a>
+  </div>
+
+  <header>
+    <img src="banner.avif" alt="Banner" />
+  </header>
+
+  <div class="main-content-wrapper">
+    <!-- 12 tane içerik kutusu -->
+    <div class="container">
+      <div class="text">
+        <h1>Departed Away</h1>
+        <p>ANAYIN AWIIIIIIII</p>
+        <p>Karakterlerimiz için, aşağıda bulunan butonlara tıklayabilirsiniz.</p>
+      </div>
+      <div class="logo">
+        <img src="logo.jpg" alt="Logo" />
+      </div>
+    </div>
+
+    <!-- 11 tane daha kopya -->
+    <div class="container"><div class="text"><h1>Başlık 2</h1><p>İçerik örneği 2</p></div><div class="logo"><img src="logo.jpg" alt="Logo" /></div></div>
+    <div class="container"><div class="text"><h1>Başlık 3</h1><p>İçerik örneği 3</p></div><div class="logo"><img src="logo.jpg" alt="Logo" /></div></div>
+    <div class="container"><div class="text"><h1>Başlık 4</h1><p>İçerik örneği 4</p></div><div class="logo"><img src="logo.jpg" alt="Logo" /></div></div>
+    <div class="container"><div class="text"><h1>Başlık 5</h1><p>İçerik örneği 5</p></div><div class="logo"><img src="logo.jpg" alt="Logo" /></div></div>
+    <div class="container"><div class="text"><h1>Başlık 6</h1><p>İçerik örneği 6</p></div><div class="logo"><img src="logo.jpg" alt="Logo" /></div></div>
+    <div class="container"><div class="text"><h1>Başlık 7</h1><p>İçerik örneği 7</p></div><div class="logo"><img src="logo.jpg" alt="Logo" /></div></div>
+    <div class="container"><div class="text"><h1>Başlık 8</h1><p>İçerik örneği 8</p></div><div class="logo"><img src="logo.jpg" alt="Logo" /></div></div>
+    <div class="container"><div class="text"><h1>Başlık 9</h1><p>İçerik örneği 9</p></div><div class="logo"><img src="logo.jpg" alt="Logo" /></div></div>
+    <div class="container"><div class="text"><h1>Başlık 10</h1><p>İçerik örneği 10</p></div><div class="logo"><img src="logo.jpg" alt="Logo" /></div></div>
+    <div class="container"><div class="text"><h1>Başlık 11</h1><p>İçerik örneği 11</p></div><div class="logo"><img src="logo.jpg" alt="Logo" /></div></div>
+    <div class="container"><div class="text"><h1>Başlık 12</h1><p>İçerik örneği 12</p></div><div class="logo"><img src="logo.jpg" alt="Logo" /></div></div>
+  </div>
+
+  <footer>
+    &copy; 2025, sadece Noaarth ve fanlara aittir :b
+  </footer>
+
+</body>
+</html>
